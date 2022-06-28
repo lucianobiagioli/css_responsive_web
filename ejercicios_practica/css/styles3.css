@@ -1,0 +1,40 @@
+.grilla {
+    display: grid;
+    grid-template: repeat(4, minmax(10px, 1fr)) / repeat(12, minmax(10px, 1fr));
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "s s c c c c c c c c a a"
+        "s s c c c c c c c c a a"
+        "f f f f f f f f f f f f";
+}
+
+.grilla > div {
+    border: 4px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    grid-area: h;
+}
+
+.sidebar {
+    grid-area: s;
+}
+
+.content {
+    grid-area: c;
+}
+
+.chat {
+    grid-area: a;
+}
+
+.footer {
+    grid-area: f;
+}
+
+body {
+    border: 4px solid black;
+    padding: 5px;
+}
